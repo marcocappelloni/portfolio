@@ -1,5 +1,11 @@
+import ResponsiveAppBar from "./header/AppBar";
+
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <ResponsiveAppBar />
+    </div>
+  );
 }
 
 export default App;

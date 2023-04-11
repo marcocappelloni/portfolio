@@ -2,10 +2,12 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 // import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import Link from "@mui/material/Link";
 
 const ExternalContainer = styled(Box)`
   padding: 40px 0;
-  font-size: 24px;
+  /* font-size: 24px; */
   background-color: darkcyan;
 `;
 
@@ -17,13 +19,17 @@ const InnerBox = styled(Box)`
 const Contacts = () => {
   return (
     <ExternalContainer>
-      <Typography sx={{ paddingBottom: 4 }}>CONTACTS</Typography>
+      <Typography variant="h4" sx={{ paddingBottom: 4 }}>
+        CONTACTS
+      </Typography>
       <InnerBox>
-        <Typography sx={{ paddingRight: 20 }}>Phone: +44 7517 189130</Typography>
-        <a href="#a">
-          <i className="fa-solid fa-at"></i>
-          <span className="iconContent">marco.cappelloni@gmail.com</span>
-        </a>
+        <Typography variant="h5" sx={{ paddingRight: 20 }}>
+          Phone: +44 7517 189130
+        </Typography>
+        <AlternateEmailIcon sx={{ my: "auto" }} />
+        <Link href="#a" color="inherit" underline="none">
+          marco.cappelloni@gmail.com
+        </Link>
       </InnerBox>
     </ExternalContainer>
   );

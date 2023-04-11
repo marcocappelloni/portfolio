@@ -66,6 +66,14 @@ export const theme = createTheme({
     borderRadius: 15
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        a {
+          textDecoration : none;
+          color: ${nordPalette.colors.nord4};
+        }
+      `
+    },
     MuiPaper: {
       defaultProps: {
         elevation: 5

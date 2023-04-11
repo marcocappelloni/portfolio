@@ -1,11 +1,11 @@
 import ResponsiveAppBar from "./header/AppBar";
-import About from "./centrals/about/About";
+import Central from "./centrals/Central";
 
 function App() {
   return (
     <div>
       <ResponsiveAppBar />
-      <About />
+      <Central />
     </div>
   );
 }

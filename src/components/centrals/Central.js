@@ -5,7 +5,7 @@ import Contacts from "./contacts/Contacts";
 
 const Central = () => {
   return (
-    <div>
+    <div style={{ marginTop: 100 }}>
       <About />
       {/* <Studies />
       <Projects /> */}

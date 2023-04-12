@@ -1,14 +1,17 @@
-import { styled } from "@mui/material/styles";
+import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-// import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import Link from "@mui/material/Link";
 
 const ExternalContainer = styled(Box)`
   padding: 40px 0;
-  /* font-size: 24px; */
-  background-color: darkcyan;
+  background-color: ${(props) => props.bg};
+  & > .MuiTypography-h4 {
+    padding-bottom: 40px;
+    font-weight: bold;
+  }
 `;
 
 const InnerBox = styled(Box)`
@@ -17,17 +20,18 @@ const InnerBox = styled(Box)`
 `;
 
 const Contacts = () => {
+  const theme = useTheme();
+
   return (
-    <ExternalContainer>
-      <Typography variant="h4" sx={{ paddingBottom: 4 }}>
-        CONTACTS
-      </Typography>
+    <ExternalContainer bg={theme.palette.primary.contrastText}>
+      <Typography variant="h4">CONTACTS</Typography>
       <InnerBox>
+        <PhoneAndroidIcon color="info" fontSize="large" sx={{ my: "auto", mr: 1 }} />
         <Typography variant="h5" sx={{ paddingRight: 20 }}>
-          Phone: +44 7517 189130
+          +44 7517 189130
         </Typography>
-        <AlternateEmailIcon sx={{ my: "auto" }} />
-        <Link href="#a" color="inherit" underline="none">
+        <AlternateEmailIcon color="info" fontSize="large" sx={{ my: "auto", mx: 1 }} />
+        <Link variant="h5" href="#a" color="inherit" underline="none">
           marco.cappelloni@gmail.com
         </Link>
       </InnerBox>

@@ -4,7 +4,7 @@ import menu from "../data/menu-elements";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 
-function AppBarMenu(props) {
+export default function AppBarMenu(props) {
   return (
     <Menu
       id="menu-appbar"
@@ -32,5 +32,3 @@ function AppBarMenu(props) {
     </Menu>
   );
 }
-
-export default AppBarMenu;

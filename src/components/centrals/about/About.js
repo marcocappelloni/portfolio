@@ -16,7 +16,7 @@ const StyledBox = styled(Box)`
   }
 `;
 
-const About = () => {
+export default function About() {
   return (
     <StyledBox>
       <MyPhoto alt="about me" src="./images/Me_6.jpeg"></MyPhoto>
@@ -27,6 +27,4 @@ const About = () => {
       </Box>
     </StyledBox>
   );
-};
-
-export default About;
+}

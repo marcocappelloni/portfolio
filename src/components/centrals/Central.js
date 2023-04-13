@@ -1,17 +1,15 @@
 import About from "./about/About";
-// import Studies from "./studies/Studies";
+import Studies from "./studies/Studies";
 // import Projects from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
 
-const Central = () => {
+export default function Central() {
   return (
     <div style={{ marginTop: 100 }}>
       <About />
-      {/* <Studies />
-      <Projects /> */}
+      <Studies />
+      {/* <Projects /> */}
       <Contacts />
     </div>
   );
-};
-
-export default Central;
+}

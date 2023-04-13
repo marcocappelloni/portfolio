@@ -1,7 +1,7 @@
 import ResponsiveAppBar from "./header/AppBar";
 import Central from "./centrals/Central";
 
-function App() {
+export default function App() {
   return (
     <div>
       <ResponsiveAppBar />
@@ -9,5 +9,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

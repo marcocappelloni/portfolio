@@ -11,7 +11,7 @@ import { useTheme } from "@mui/material/styles";
 import Logo from "../styled/Logo.styled";
 import AppBarMenu from "./AppBarMenu";
 
-function ResponsiveAppBar() {
+export default function ResponsiveAppBar() {
   const theme = useTheme();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -61,4 +61,3 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;

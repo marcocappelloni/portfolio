@@ -20,7 +20,7 @@ const InnerBox = styled(Box)`
   justify-content: center;
 `;
 
-const Contacts = () => {
+export default function Contacts() {
   const theme = useTheme();
 
   return (
@@ -38,6 +38,4 @@ const Contacts = () => {
       </InnerBox>
     </ExternalContainer>
   );
-};
-
-export default Contacts;
+}

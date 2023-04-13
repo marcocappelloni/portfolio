@@ -19,10 +19,8 @@ const StyledImage = styled.img`
   z-index: -1;
 `;
 
-function MyPhoto() {
+export default function MyPhoto() {
   const theme = useTheme();
 
   return <StyledImage alt="picture of me" src="./images/Me.jpeg" borderCol={theme.palette.secondary.main} />;
 }
-
-export default MyPhoto;

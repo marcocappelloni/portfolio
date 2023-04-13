@@ -8,6 +8,7 @@ import Link from "@mui/material/Link";
 const ExternalContainer = styled(Box)`
   padding: 40px 0;
   background-color: ${(props) => props.bg};
+
   & > .MuiTypography-h4 {
     padding-bottom: 40px;
     font-weight: bold;

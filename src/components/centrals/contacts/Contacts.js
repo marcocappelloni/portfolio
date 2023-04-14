@@ -25,7 +25,9 @@ export default function Contacts() {
 
   return (
     <ExternalContainer bg={theme.palette.primary.contrastText}>
-      <Typography variant="h4">CONTACTS</Typography>
+      <Typography color={theme.palette.info.main} variant="h4">
+        CONTACTS
+      </Typography>
       <InnerBox>
         <PhoneAndroidIcon color="info" fontSize="large" sx={{ my: "auto", mr: 1 }} />
         <Typography variant="h5" sx={{ paddingRight: 20 }}>

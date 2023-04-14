@@ -7,6 +7,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import Grow from "@mui/material/Grow";
 import studiesList from "../../data/studies-list";
 import CardStyled from "../../styled/Card.styled";
+import Title from "./Title";
 
 export default function StudiesStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -31,7 +32,8 @@ export default function StudiesStepper() {
 
   return (
     <div>
-      <Box sx={{ width: 600, mx: "auto", mt: 20 }}>
+      <Title />
+      <Box sx={{ width: 600, mx: "auto", mt: 2 }}>
         <Grow in={zoomIn}>
           <div>
             <CardStyled label={studiesList[activeStep].label} description={studiesList[activeStep].description} />

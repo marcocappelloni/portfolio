@@ -13,6 +13,10 @@ const StyledCard = styled(Card)`
   margin: 20px 0;
 `;
 
+const StyledBox = styled(Box)`
+  height: 200px;
+`;
+
 export default function CardStyled(props) {
   return (
     <StyledCard>
@@ -21,9 +25,9 @@ export default function CardStyled(props) {
           {props?.label}
         </Typography>
         <Divider />
-        <Box sx={{ height: 200 }}>
+        <StyledBox>
           <Typography variant="body">{props?.description}</Typography>
-        </Box>
+        </StyledBox>
       </CardContent>
       <CardActions sx={{ visibility: "hidden" }}>
         <Button size="small">Learn More</Button>

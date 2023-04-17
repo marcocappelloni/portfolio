@@ -1,11 +1,15 @@
 import { Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 
-export default function Title() {
-  const theme = useTheme();
+const StyledTitle = styled(Typography)`
+  margin-bottom: 5rem;
+  font-weight: 600;
+`;
+
+export default function Title(props) {
   return (
-    <Typography color={theme.palette.info.main} variant="h3" sx={{ mt: 20, mb: 8 }} style={{ fontWeight: 600 }}>
-      STUDIES
-    </Typography>
+    <StyledTitle color="info.main" variant="h3">
+      {props.text}
+    </StyledTitle>
   );
 }

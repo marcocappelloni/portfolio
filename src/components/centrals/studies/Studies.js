@@ -8,11 +8,25 @@ import Grow from "@mui/material/Grow";
 import studiesList from "../../data/studies-list";
 import CardStyled from "../../styled/Card.styled";
 import Title from "./Title";
+import CentralBox from "../../styled/CentralBox.styled";
+import { useTheme, styled } from "@mui/material/styles";
+
+const StyledCardsBox = styled(Box)`
+  width: 600px;
+  margin: 0 auto;
+`;
+
+const StyledStepper = styled(MobileStepper)`
+  width: 400px;
+  margin: 0 auto;
+`;
 
 export default function StudiesStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [zoomIn, setZoomIn] = React.useState(true);
   const maxSteps = studiesList.length;
+
+  const theme = useTheme();
 
   const handleNext = () => {
     setZoomIn(false);
@@ -31,17 +45,16 @@ export default function StudiesStepper() {
   };
 
   return (
-    <div>
-      <Title />
-      <Box sx={{ width: 600, mx: "auto", mt: 2 }}>
+    <CentralBox backgroundColor={theme.palette.primary.contrastText}>
+      <Title text="STUDIES" />
+      <StyledCardsBox>
         <Grow in={zoomIn}>
           <div>
             <CardStyled label={studiesList[activeStep].label} description={studiesList[activeStep].description} />
           </div>
         </Grow>
-      </Box>
-      <MobileStepper
-        sx={{ width: 400, mx: "auto", mb: 20 }}
+      </StyledCardsBox>
+      <StyledStepper
         variant="dots"
         steps={maxSteps}
         position="static"
@@ -59,6 +72,6 @@ export default function StudiesStepper() {
           </Button>
         }
       />
-    </div>
+    </CentralBox>
   );
 }

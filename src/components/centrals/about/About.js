@@ -10,6 +10,7 @@ const StyledBox = styled(Box)`
   align-items: center;
 
   & > .MuiBox-root {
+    padding-left: 5rem;
     & > .MuiTypography-root {
       font-family: "Montserrat";
     }
@@ -20,8 +21,7 @@ export default function About() {
   return (
     <StyledBox>
       <MyPhoto alt="about me" src="./images/Me_6.jpeg"></MyPhoto>
-
-      <Box sx={{ paddingLeft: 6 }}>
+      <Box>
         <Typography variant="h2">Hi I am Marco Cappelloni</Typography>
         <Typography variant="h4">a web developer</Typography>
       </Box>

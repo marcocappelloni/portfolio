@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import Link from "@mui/material/Link";
+// import Title from "../Title";
 
 const ExternalContainer = styled(Box)`
   padding: 40px 0;
@@ -25,6 +26,7 @@ export default function Contacts() {
 
   return (
     <ExternalContainer bg={theme.palette.primary.contrastText}>
+      {/* <Title text="CONTACTS" /> */}
       <Typography color={theme.palette.info.main} variant="h4">
         CONTACTS
       </Typography>

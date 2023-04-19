@@ -7,7 +7,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import Grow from "@mui/material/Grow";
 import studiesList from "../../data/studies-list";
 import CardStyled from "../../styled/Card.styled";
-import Title from "./Title";
+import Title from "../Title";
 import CentralBox from "../../styled/CentralBox.styled";
 import { useTheme, styled } from "@mui/material/styles";
 

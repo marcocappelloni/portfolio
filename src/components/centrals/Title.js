@@ -8,7 +8,7 @@ const StyledTitle = styled(Typography)`
 
 export default function Title(props) {
   return (
-    <StyledTitle color="info.main" variant="h3">
+    <StyledTitle color="primary.main" variant="h3">
       {props.text}
     </StyledTitle>
   );

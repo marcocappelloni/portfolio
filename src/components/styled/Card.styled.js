@@ -4,8 +4,9 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
 import { styled } from "@mui/material/styles";
-import { Box } from "@mui/material";
 
 const StyledCard = styled(Card)`
   text-align: justify;
@@ -15,6 +16,11 @@ const StyledCard = styled(Card)`
 
 const StyledBox = styled(Box)`
   height: 200px;
+`;
+
+const StyledCardActions = styled(CardActions)`
+  display: flex;
+  justify-content: center;
 `;
 
 export default function CardStyled(props) {
@@ -29,9 +35,11 @@ export default function CardStyled(props) {
           <Typography variant="body">{props?.description}</Typography>
         </StyledBox>
       </CardContent>
-      <CardActions sx={{ visibility: "hidden" }}>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      <StyledCardActions sx={{ visibility: props.link === "" ? "hidden" : "visible" }}>
+        <Button component={Link} size="small" href={props.link}>
+          Learn More
+        </Button>
+      </StyledCardActions>
     </StyledCard>
   );
 }

@@ -33,7 +33,7 @@ export default function StudiesStepper() {
     setTimeout(() => {
       setActiveStep((prevActiveStep) => prevActiveStep + 1);
       setZoomIn(true);
-    }, 500);
+    }, 400);
   };
 
   const handleBack = () => {
@@ -41,7 +41,7 @@ export default function StudiesStepper() {
     setTimeout(() => {
       setActiveStep((prevActiveStep) => prevActiveStep - 1);
       setZoomIn(true);
-    }, 500);
+    }, 400);
   };
 
   return (
@@ -50,7 +50,11 @@ export default function StudiesStepper() {
       <StyledCardsBox>
         <Grow in={zoomIn}>
           <div>
-            <CardStyled label={studiesList[activeStep].label} description={studiesList[activeStep].description} />
+            <CardStyled
+              label={studiesList[activeStep].label}
+              description={studiesList[activeStep].description}
+              link={studiesList[activeStep].link}
+            />
           </div>
         </Grow>
       </StyledCardsBox>

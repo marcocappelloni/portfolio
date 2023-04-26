@@ -1,0 +1,5 @@
+- Responsive Web Design
+	https://www.freecodecamp.org/certification/fcc314e9411-deac-4201-b2ed-6d003017efa5/responsive-web-design
+
+- Javascripts Algorithms and Data Structures
+	https://www.freecodecamp.org/certification/fcc314e9411-deac-4201-b2ed-6d003017efa5/javascript-algorithms-and-data-structures

@@ -3,18 +3,23 @@ const studiesList = [
     label: "Select campaign settings",
     description: `For each ad campaign that you create, you can control how much
               you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`
+              and geographical locations you want your ads to show on, and more.`,
+    link: "https://www.google.com/"
   },
   {
-    label: "Create an ad group",
-    description: "An ad group contains one or more ads which target a shared set of keywords."
+    label: "Certificate",
+    description: "The complete 2020 Web Development Bootcamp online course on Udemy.",
+    link: "/images/UdemyCertificate.jpg"
   },
   {
-    label: "Create an ad",
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`
+    label: "Certificate",
+    description: "Responsive Web Design on FreeCodeCamp",
+    link: "https://www.freecodecamp.org/certification/fcc314e9411-deac-4201-b2ed-6d003017efa5/responsive-web-design"
+  },
+  {
+    label: "Certificate",
+    description: "Javascripts Algorithms and Data Structures on FreeCodeCamp.",
+    link: "https://www.freecodecamp.org/certification/fcc314e9411-deac-4201-b2ed-6d003017efa5/javascript-algorithms-and-data-structures"
   }
 ];
 

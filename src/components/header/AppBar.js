@@ -56,7 +56,6 @@ export default function ResponsiveAppBar() {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                // activeClass="active"
               >
                 {item.text}
               </StyledLink>

@@ -1,22 +1,22 @@
 const menu = [
   {
     id: 1,
-    link: "#",
+    link: "about",
     text: "About"
   },
   {
     id: 2,
-    link: "#studies",
+    link: "studies",
     text: "Studies"
   },
   {
     id: 3,
-    link: "#projects",
+    link: "projects",
     text: "Projects"
   },
   {
     id: 4,
-    link: "#contacts",
+    link: "contacts",
     text: "Contacts"
   }
 ];

@@ -5,14 +5,16 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import menu from "../data/menu-elements";
-import { useTheme } from "@mui/material/styles";
+// import { useTheme } from "@mui/material/styles";
 import Logo from "../styled/Logo.styled";
+import StyledLink from "../styled/Link.styled";
 import AppBarMenu from "./AppBarMenu";
+// import { Link } from "react-scroll";
 
 export default function ResponsiveAppBar() {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -46,14 +48,18 @@ export default function ResponsiveAppBar() {
           <Logo variant="h3" visible="xs" />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: "end" }}>
             {menu.map((item) => (
-              <Button
+              <StyledLink
                 key={item.id}
                 onClick={handleCloseNavMenu}
-                href={item.link}
-                sx={{ my: 2, color: `${theme.palette.text.primary}`, display: "block", fontSize: "18px" }}
+                to={item.link}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                // activeClass="active"
               >
                 {item.text}
-              </Button>
+              </StyledLink>
             ))}
           </Box>
         </Toolbar>

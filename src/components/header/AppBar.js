@@ -48,15 +48,7 @@ export default function ResponsiveAppBar() {
           <Logo variant="h3" visible="xs" />
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: "end" }}>
             {menu.map((item) => (
-              <StyledLink
-                key={item.id}
-                onClick={handleCloseNavMenu}
-                to={item.link}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
+              <StyledLink key={item.id} onClick={handleCloseNavMenu} to={item.link}>
                 {item.text}
               </StyledLink>
             ))}

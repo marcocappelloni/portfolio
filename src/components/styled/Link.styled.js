@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link).attrs(() => ({
+  spy: true,
+  smooth: true,
+  offset: -100,
+  duration: 500
+}))`
   display: block;
   padding: 0.5rem 1rem;
   font-size: 20px;
